@@ -199,6 +199,7 @@ exec --no-startup-id xautolock -locker lockme -time 5 -corners ---- -cornersize 
 exec --no-startup-id udiskie &
 # exec --no-startup-id blueman-applet
 exec --no-startup-id blueberry-tray 
+exec --no-startup-id unclutter &
 
 # Set wallpaper
 exec_always feh --bg-scale $wallpaper
@@ -209,8 +210,8 @@ bindsym $mod+T exec --no-startup-id synclient MaxTapTime=180
 bindsym $mod+Shift+T exec --no-startup-id synclient MaxTapTime=0
 
 # Set Gaps
+gaps outer -5
 gaps inner 10
-#gaps outer 05
 bindsym $mod+G gaps inner current plus 5
 bindsym $mod+Shift+G gaps inner current minus 5
 new_window pixel 2
@@ -255,6 +256,8 @@ for_window [ class="gimp-2.8" ] move container to workspace $workspace4
 for_window [ class="Gimp-2.8" ] move container to workspace $workspace4
 for_window [ class="VirtualBox" ] move container to workspace $workspace5
 for_window [ class="jetbrains-studio" ] move container to workspace $workspace2
+for_window [ class="vmware" ] move container to workspace $workspace5
+for_window [ class="Vmplayer" ] move container to workspace $workspace5
 
 mode "projector" {
 	bindsym Escape mode default
