@@ -185,8 +185,6 @@ bar {
     }
 }
 
-# exec --no-startup-id polybar number1
-
 # Startup programs
 exec --no-startup-id compton -b
 exec --no-startup-id nm-applet
@@ -195,11 +193,12 @@ exec --no-startup-id xfce4-power-manager
 # exec --no-startup-id slack
 exec --no-startup-id spotify
 exec --no-startup-id pasystray
-exec --no-startup-id xautolock -locker lockme -time 5 -corners ---- -cornersize 5
+# exec --no-startup-id xautolock -locker lockme -time 5 -corners ---- -cornersize 5
 exec --no-startup-id udiskie &
 # exec --no-startup-id blueman-applet
 exec --no-startup-id blueberry-tray 
 exec --no-startup-id unclutter &
+exec --no-startup-id xset led 3
 
 # Set wallpaper
 exec_always feh --bg-scale $wallpaper
@@ -216,6 +215,7 @@ bindsym $mod+G gaps inner current plus 5
 bindsym $mod+Shift+G gaps inner current minus 5
 new_window pixel 2
 smart_gaps on
+smart_borders on
 
 # Volume controls
 # Use PACTL
@@ -258,6 +258,8 @@ for_window [ class="VirtualBox" ] move container to workspace $workspace5
 for_window [ class="jetbrains-studio" ] move container to workspace $workspace2
 for_window [ class="vmware" ] move container to workspace $workspace5
 for_window [ class="Vmplayer" ] move container to workspace $workspace5
+for_window [ class="Navigator" ] floating disable
+# for_window [ class="Firefox" ] floating disable no_focus
 
 mode "projector" {
 	bindsym Escape mode default
