@@ -1,26 +1,39 @@
-" All system-wide defaults are set in $VIMRUNTIME/archlinux.vim (usually just
-" /usr/share/vim/vimfiles/archlinux.vim) and sourced by the call to :runtime
-" you can find below.  If you wish to change any of those settings, you should
-" do it in this file (/etc/vimrc), since archlinux.vim will be overwritten
-" everytime an upgrade of the vim packages is performed.  It is recommended to
-" make changes after sourcing archlinux.vim since it alters the value of the
-" 'compatible' option.
+set nocompatible
+filetype off
 
-" This line should not be removed as it ensures that various options are
-" properly set to work with the Vim-related packages.
-runtime! archlinux.vim
-set clipboard=unnamedplus
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+"Bundle Plugins go here
+" Bundle 'https://github.com/neilagabriel/vim-geeknote'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-surround'
+Plugin 'file:///home/jake/.vim/bundle/vim-geeknote-mod'
+Plugin 'kien/ctrlp.vim'
+
+call vundle#end()
+filetype plugin indent on
+
+" Custom Keybinds
+noremap <F8> :Geeknote<cr>
+noremap <F2> :NERDTreeToggle<CR>
+nnoremap <silent> <C-l> <c-w>l
+nnoremap <silent> <C-h> <c-w>h
+nnoremap <silent> <C-k> <c-w>k
+nnoremap <silent> <C-j> <c-w>j
+nnoremap <silent> <C-p> :CtrlP
+nnoremap <silent> <C-t>	:tab split <Return>
+
+" Settings
+set mouse=a
 set number
 set relativenumber
-let g:powerline_pycmd = 'py3'
-
-set rtp+=/usr/lib/python3.6/site-packages/powerline/bindings/vim/
-
-" Always show statusline
-set laststatus=2
-
-" Use 256 colours
-set t_Co=256
+syntax on
+syntax sync minlines=200
 
 " If you prefer the old-style vim functionalty, add 'runtime! vimrc_example.vim'
 " Or better yet, read /usr/share/vim/vim80/vimrc_example.vim or the vim manual
