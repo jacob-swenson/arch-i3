@@ -332,6 +332,7 @@ go
 gobject-introspection-runtime
 gom
 goocanvas
+google-chrome
 google-earth-pro
 gparted
 gpgme
@@ -622,6 +623,7 @@ lib32-p11-kit
 lib32-pcre
 lib32-primus
 lib32-readline
+lib32-sqlite
 lib32-systemd
 lib32-util-linux
 lib32-v4l-utils
@@ -960,6 +962,7 @@ lua52-lpeg
 lua52-luajson
 lua52-socket
 luajit
+lutris
 lvm2
 lxappearance
 lynx
@@ -1010,6 +1013,7 @@ nano
 nautilus
 nautilus-sendto
 ncurses
+ndctl
 neofetch
 neon
 neovim
@@ -1176,6 +1180,7 @@ python-docopt
 python-docutils
 python-dpkt
 python-entrypoints
+python-evdev
 python-gobject
 python-html5lib
 python-idna

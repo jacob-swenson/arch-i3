@@ -9,17 +9,18 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 "Bundle Plugins go here
-" Bundle 'https://github.com/neilagabriel/vim-geeknote'
+" Enter :PluginInstall in vim or vim +PluginInstall +qall from CLI to
+" update/install bundles
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-surround'
-Plugin 'file:///home/jake/.vim/bundle/vim-geeknote-mod'
 Plugin 'kien/ctrlp.vim'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-fugitive'
 
 call vundle#end()
 filetype plugin indent on
 
 " Custom Keybinds
-noremap <F8> :Geeknote<cr>
 noremap <F2> :NERDTreeToggle<CR>
 nnoremap <silent> <C-l> <c-w>l
 nnoremap <silent> <C-h> <c-w>h
@@ -27,6 +28,8 @@ nnoremap <silent> <C-k> <c-w>k
 nnoremap <silent> <C-j> <c-w>j
 nnoremap <silent> <C-p> :CtrlP
 nnoremap <silent> <C-t>	:tab split <Return>
+nnoremap H ^
+nnoremap L $
 
 " Settings
 set mouse=a
