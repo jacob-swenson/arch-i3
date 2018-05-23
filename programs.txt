@@ -131,6 +131,7 @@ cpio
 cracklib
 cryptsetup
 ctags
+ctemplate
 cups
 cups-filters
 cups-pk-helper
@@ -970,6 +971,7 @@ lz4
 lzo
 m4
 mailcap
+mailspring
 make
 man-db
 man-pages
@@ -1007,6 +1009,7 @@ mtdev
 mtpaint
 mujs
 mupdf
+mutt
 mutter
 mypaint-brushes
 nano
@@ -1359,7 +1362,7 @@ simple-scan
 simplenote-electron-bin
 sip
 sky
-skypeforlinux-bin
+skypeforlinux-stable-bin
 slack-desktop
 slang
 smbclient
