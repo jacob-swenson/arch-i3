@@ -1,6 +1,7 @@
 a52dec
 aalib
 accerciser
+accounts-qml-module
 accountsservice
 acl
 acpid
@@ -142,6 +143,7 @@ dbus-glib
 dcadec
 dconf
 dconf-editor
+dep
 desktop-file-utils
 devhelp
 device-mapper
@@ -335,6 +337,7 @@ gom
 goocanvas
 google-chrome
 google-earth-pro
+googler
 gparted
 gpgme
 gpm
@@ -401,6 +404,7 @@ harfbuzz-icu
 hdf5
 hexchat
 hicolor-icon-theme
+hiri
 hitori
 hspell
 http-parser
@@ -463,6 +467,7 @@ jupyter-nbformat
 jupyter-notebook
 jupyter-widgetsnbextension
 jupyter_console
+kaccounts-integration
 kactivities
 kactivities-stats
 kactivitymanagerd
@@ -633,6 +638,8 @@ lib32-wayland
 lib32-xz
 lib32-zlib
 libabw
+libaccounts-glib
+libaccounts-qt
 libaec
 libaio
 libanjuta
@@ -757,6 +764,7 @@ libisofs
 libixion
 libjpeg-turbo
 libkate
+libkexiv2
 libkeybinder3
 libksba
 libksysguard
@@ -876,6 +884,7 @@ libusb
 libusb-compat
 libusbmuxd
 libutempter
+libutf8proc
 libutil-linux
 libuv
 libva
@@ -1049,6 +1058,7 @@ nvidia-settings
 nvidia-utils
 ocl-icd
 octave
+okular
 oniguruma
 openal
 opencl-nvidia
@@ -1155,6 +1165,7 @@ pulseaudio-alsa
 pulseaudio-bluetooth
 pulseaudio-ctl
 pulseaudio-equalizer
+purpose
 pushbullet-commons
 pushbullet-indicator
 pycharm-community
@@ -1283,7 +1294,9 @@ python2-sqlalchemy
 python2-typing
 python2-urllib3
 python2-whoosh
+python3-kitchen
 qca-qt4
+qca-qt5
 qhull
 qpdf
 qqc2-desktop-style
@@ -1324,6 +1337,7 @@ rofi
 rsync
 rtkit
 rtmpdump
+rtv
 ruby
 ruby-dbus
 ruby-ffi
@@ -1357,13 +1371,17 @@ setconf
 shadow
 shared-color-targets
 shared-mime-info
+signon-kwallet-extension
+signon-plugin-oauth2
+signon-ui
+signond
 siji-git
 simple-scan
 simplenote-electron-bin
 sip
-sky
 skypeforlinux-stable-bin
 slack-desktop
+slack-term
 slang
 smbclient
 snappy
@@ -1448,6 +1466,7 @@ udiskie
 udisks2
 unclutter-xfixes-git
 unibilium
+unified-remote-server
 unzip
 upower
 usbmuxd

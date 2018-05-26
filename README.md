@@ -10,5 +10,6 @@ polybar/* config and scripts for Polybar
 bashrc - bash config
 global-vimrc - The global vim config found at /etc/vimrc
 vimrc - The local vim config found at ~/.vimrc
+Xresources - Rofi and Terminal Themes
 ```
 TODO: Describe each config file and important changes

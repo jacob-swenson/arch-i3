@@ -30,6 +30,8 @@ nnoremap <silent> <C-p> :CtrlP
 nnoremap <silent> <C-t>	:tab split <Return>
 nnoremap H ^
 nnoremap L $
+nnoremap dH d^
+nnoremap dL d$
 
 " Settings
 set mouse=a

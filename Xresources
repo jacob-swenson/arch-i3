@@ -1,0 +1,69 @@
+! ------------------------------------------------------------------------------
+! Terminal color theme
+! Generated in terminal.sexy
+! ------------------------------------------------------------------------------
+! special
+*.foreground:   #a2a2a2
+*.background:   #282828
+*.cursorColor:  #a2a2a2
+
+! black
+*.color0:       #555555
+*.color8:       #888888
+
+! red
+*.color1:       #9c3528
+*.color9:       #d64937
+
+! green
+*.color2:       #61bc3b
+*.color10:      #86df5d
+
+! yellow
+*.color3:       #f3b43a
+*.color11:      #fdd75a
+
+! blue
+*.color4:       #0d68a8
+*.color12:      #0f75bd
+
+! magenta
+*.color5:       #744560
+*.color13:      #9e5e83
+
+! cyan
+*.color6:       #288e9c
+*.color14:      #37c3d6
+
+! white
+*.color7:       #a2a2a2
+*.color15:      #f9f9f9
+
+! ------------------------------------------------------------------------------
+! ROFI Color theme
+! ------------------------------------------------------------------------------
+rofi.color-enabled: true
+#rofi.color-window: argb:792f1e2e, argb:36ef6155, argb:2fef6155
+rofi.color-window: argb:bb2f1e2e, argb:36ef6155, argb:2fef6155
+rofi.color-normal: argb:972f1e2e, #b4b4b4, argb:a02f1e2e, argb:54815ba4, #ffffff
+rofi.color-active: argb:272f1e2e, #815ba4, argb:2f2f1e2e, argb:54815ba4, #815ba4
+rofi.color-urgent: argb:272f1e2e, #ef6155, argb:2f2f1e2e, argb:54815ba4, #ef6155
+rofi.fullscreen: true
+rofi.columns: 1
+#rofi.lines: 4
+rofi.hide_scrollbar: true
+rofi.padding: 440
+#rofi.fullscreen: true
+
+!-------------------------------------------------------------------------------
+! URXVT Settings
+!-------------------------------------------------------------------------------
+
+URxvt.scrollBar: false
+urxvt*depth: 32
+#urxvt*background: rgba:0175/0000/0239/c800
+urxvt*background: rgba:0175/0000/0239/e000
+URxvt.perl-ext-common: 	default,matcher
+URxvt.url-launcher:	/usr/bin/xdg-open
+URxvt.matcher.button:	1
+urxvt.font: xft:iosevka:size=12
