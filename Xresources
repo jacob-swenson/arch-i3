@@ -66,4 +66,8 @@ urxvt*background: rgba:0175/0000/0239/e000
 URxvt.perl-ext-common: 	default,matcher
 URxvt.url-launcher:	/usr/bin/xdg-open
 URxvt.matcher.button:	1
-urxvt.font: xft:iosevka:size=12
+urxvt.font: xft:Source Code Pro:size=12
+urxvt.boldFont: xft:Source Code Pro:bold:size=12
+urxvt.italicFont: xft:Source Code Pro:italic:size=12
+urxvt.boldItalicFont: xft:Source Code Pro:bolditalic:size=12
+URxvt.letterspace: 1

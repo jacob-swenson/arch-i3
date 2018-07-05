@@ -16,13 +16,10 @@ primary = #815ba4
 secondary = #e60053
 alert = #bd2c40
 
-[bar/jake]
-monitor = ${env:MONITOR:eDP1}
+;; BARS ;;
+[bar/template]
 width = 100%
 height = 22
-;offset-x = 1%
-;offset-y = 1%
-;radius = 6.0
 radius = 0.0
 fixed-center = false
 
@@ -47,128 +44,44 @@ font-2 = Wuncon Siji:pixelsize=10;1
 font-3 = FontAwesome:style=Regular
 font-4 = Weather Icons:size=12;1
 
-modules-left = i3
+modules-left = i3 xwindow
 modules-center = spotify 
-modules-right = filesystem volume wlan eth openweathermap-fullfeatured battery date powermenu
-
-tray-position = right
-tray-padding = 2
-;tray-transparent = true
-;tray-background = #0063ff
-
-;wm-restack = bspwm
-;wm-restack = i3
-
-;override-redirect = true
-
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
+modules-right = weather filesystem volume wlan eth temperature battery date powermenu
 
 scroll-up = i3wm-wsnext
 scroll-down = i3wm-wsprev
+
+[bar/primary]
+inherit = bar/template
+monitor = ${env:MONITOR:eDP1}
+
+tray-position = right
+tray-padding = 2
 
 [bar/external]
+inherit = bar/template
 monitor = ${env:MONITOR:HDMI2}
-width = 100%
-height = 22
-;offset-x = 1%
-;offset-y = 1%
-;radius = 6.0
-radius = 0.0
-fixed-center = false
 
-background = ${colors.background}
-foreground = ${colors.foreground}
+modules-center = date
+modules-right = powermenu
 
-line-size = 3
-line-color = #f00
+[bar/mirror]
+inherit = bar/template
+monitor = ${env:MONITOR:HDMI2}
+fallback-monitor = ${env:MONITOR:eDP1}
 
-border-size = 0
-border-color = #00000000
-
-padding-left = 0
-padding-right = 2
-
-module-margin-left = 1
-module-margin-right = 2
-
-font-0 = fixed:pixelsize=10;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = Wuncon Siji:pixelsize=10;1
-font-3 = FontAwesome:style=Regular
-font-4 = Weather Icons:size=12;1
-
-modules-left = i3
-modules-center = spotify 
-modules-right = filesystem volume wlan eth openweathermap-fullfeatured battery date 
+modules-left = i3-stickyless xwindow
 
 tray-position = right
 tray-padding = 2
-;tray-transparent = true
-;tray-background = #0063ff
 
-;wm-restack = bspwm
-;wm-restack = i3
-
-;override-redirect = true
-
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
-
-scroll-up = i3wm-wsnext
-scroll-down = i3wm-wsprev
-
-[bar/example]
-;monitor = ${env:MONITOR:HDMI-1}
-width = 100%
-height = 27
-;offset-x = 1%
-;offset-y = 1%
-radius = 6.0
-fixed-center = false
-
-background = ${colors.background}
-foreground = ${colors.foreground}
-
-line-size = 3
-line-color = #f00
-
-border-size = 4
-border-color = #00000000
-
-padding-left = 0
-padding-right = 2
-
-module-margin-left = 1
-module-margin-right = 2
-
-font-0 = fixed:pixelsize=10;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = siji:pixelsize=10;1
-
-modules-left = bspwm i3
-modules-center = mpd
-modules-right = filesystem volume memory cpu wlan eth battery temperature date powermenu
-
-tray-position = right
-tray-padding = 2
-;tray-transparent = true
-;tray-background = #0063ff
-
-;wm-restack = bspwm
-;wm-restack = i3
-
-;override-redirect = true
-
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
-
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
-
+;; MODULES ;;
 [module/xwindow]
 type = internal/xwindow
 label = %title:0:30:...%
+label-underline = ${colors.background}
+label-background = ${colors.primary}
+label-padding = 2
 
 [module/xkeyboard]
 type = internal/xkeyboard
@@ -196,6 +109,7 @@ mount-1 = /home
 label-mounted = %{F#0a81f5}%mountpoint%%{F-}: %percentage_used%%
 label-unmounted = %mountpoint% not mounted
 label-unmounted-foreground = ${colors.foreground-alt}
+label-mounted-underline = ${colors.primary}
 
 [module/bspwm]
 type = internal/bspwm
@@ -249,6 +163,10 @@ label-visible-padding = ${self.label-focused-padding}
 label-urgent = %index%
 label-urgent-background = ${module/bspwm.label-urgent-background}
 label-urgent-padding = ${module/bspwm.label-urgent-padding}
+
+[module/i3-stickyless]
+inherit = module/i3
+pin-workspaces = false
 
 [module/mpd]
 type = internal/mpd
@@ -342,6 +260,8 @@ format-disconnected =
 [module/date]
 type = internal/date
 interval = 5
+
+format-underline = ${colors.primary}
 
 date = " %m/%d/%Y"
 date-alt = " %Y-%m-%d"
@@ -459,7 +379,7 @@ animation-charging-framerate = 750
 [module/temperature]
 type = internal/temperature
 thermal-zone = 0
-warn-temperature = 60
+warn-temperature = 75
 
 format = <ramp> <label>
 ;format-underline = #f50a4d
@@ -510,16 +430,11 @@ label = %output%
 
 [module/weather]
 type = custom/script
-exec = weather-bar
-tail = true
-label-font = 3
-label =  %output%
-
-[module/openweathermap-fullfeatured]
-type = custom/script
 exec = /home/jake/.config/polybar/openweathermap-fullfeatured.sh
-interval = 600
+interval = 60
 label-font = 5
+;format-underline = ${colors.primary}
+label-foreground = ${colors.primary}
 
 [settings]
 screenchange-reload = true

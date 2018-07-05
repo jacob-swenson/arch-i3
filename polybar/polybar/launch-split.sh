@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-wait 1
+
 # Terminate already running bar instances
 killall -q polybar
 
@@ -7,5 +7,6 @@ killall -q polybar
 while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 polybar primary &
+polybar external &
 
 echo "Bars launched..."
