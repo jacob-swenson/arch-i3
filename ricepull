@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo "Pulling from github"
+git pull origin master
+echo "Copying configuration files"
+cd ~/repos/rice
+cp i3/config ~/.config/i3/config
+cp i3status/config ~/.config/i3status/config 
+cp ranger/rc.conf ~/.config/ranger/rc.conf 
+cp images/wallpaper.jpg ~/.config/images/wallpaper.jpg
+cp images/lockscreen.jpg ~/.config/images/lockscreen.jpg
+cp -r polybar ~/.config/polybar
+cp bashrc ~/.bashrc
+cp global-vimrc /etc/.vimrc
+cp Xresources ~/.Xresources
+cp ricepush /usr/bin/ricepush
+echo "Done copying config files"

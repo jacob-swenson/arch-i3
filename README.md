@@ -11,5 +11,7 @@ bashrc - bash config
 global-vimrc - The global vim config found at /etc/vimrc
 vimrc - The local vim config found at ~/.vimrc
 Xresources - Rofi and Terminal Themes
+ricepush - The script that grabs all my configs and pushes them to github
+ricepull - A script to pull config files and copy them to the appropriate locations
 ```
 TODO: Describe each config file and important changes
