@@ -132,6 +132,7 @@ conky
 convertlit
 corebird
 coreutils
+cower
 cpio
 cracklib
 cryptsetup
@@ -198,6 +199,7 @@ evtest
 exempi
 exiv2
 exo
+expac
 expat
 extra-cmake-modules
 faac
@@ -555,7 +557,6 @@ kxmlgui
 ladspa
 lame
 lapack
-lastpass
 lastpass-cli
 lcms
 lcms2
@@ -1121,6 +1122,7 @@ ostree
 p11-kit
 p7zip
 pa-applet-git
+pacaur
 package-query
 pacman
 pacman-contrib
@@ -1338,6 +1340,7 @@ python-terminado
 python-testpath
 python-tornado
 python-traitlets
+python-typed-ast
 python-urllib3
 python-wcwidth
 python-webencodings
