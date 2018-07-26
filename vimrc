@@ -16,6 +16,8 @@ Plugin 'tpope/vim-surround'
 Plugin 'kien/ctrlp.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
+Plugin 'christophermca/meta5'
+Plugin 'vim-scripts/guicolorscheme.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -39,6 +41,13 @@ set number
 set relativenumber
 syntax on
 syntax sync minlines=200
+
+" Theme settings
+colorscheme meta5
+"set background=dark
+let g:airline_theme='meta5'
+set t_Co=256
+
 
 " If you prefer the old-style vim functionalty, add 'runtime! vimrc_example.vim'
 " Or better yet, read /usr/share/vim/vim80/vimrc_example.vim or the vim manual

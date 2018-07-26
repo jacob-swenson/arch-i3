@@ -83,6 +83,7 @@ brltty
 brotli
 btrfs-progs
 bubblewrap
+bullet
 bumblebee
 burpsuite
 bzip2
@@ -423,9 +424,11 @@ hashcat
 hashcat-utils
 haskell-cmark
 hdf5
+help2man
 hexchat
 hicolor-icon-theme
 hspell
+htmlcxx
 http-parser
 hunspell
 hunspell-en
@@ -455,6 +458,7 @@ iputils
 ipython
 irssi
 iso-codes
+itch
 iw
 jack
 jansson
@@ -566,6 +570,7 @@ ldns
 leafpad
 lensfun
 less
+lgogdownloader
 lhasa
 lib32-acl
 lib32-alsa-lib
@@ -1050,6 +1055,7 @@ mujs
 mupdf
 mutt
 mutter
+mygui
 mypaint-brushes
 nano
 nasm
@@ -1090,6 +1096,7 @@ nvidia-settings
 nvidia-utils
 ocl-icd
 octave
+ois
 okular
 oniguruma
 openal
@@ -1104,7 +1111,9 @@ openimageio
 openjpeg
 openjpeg2
 openmpi
+openmw
 openresolv
+openscenegraph
 openshadinglanguage
 openssh
 openssl
@@ -1162,6 +1171,7 @@ perl-io-stringy
 perl-io-tty
 perl-list-moreutils
 perl-list-moreutils-xs
+perl-locale-gettext
 perl-mailtools
 perl-mime-tools
 perl-module-build
@@ -1230,6 +1240,7 @@ protobuf
 protobuf-c
 psmisc
 ptex
+pth
 pulseaudio
 pulseaudio-alsa
 pulseaudio-bluetooth
@@ -1423,6 +1434,7 @@ qt5-speech
 qt5-svg
 qt5-tools
 qt5-webchannel
+qt5-webengine
 qt5-webkit
 qt5-x11extras
 qt5-xmlpatterns
@@ -1559,6 +1571,7 @@ thunar-volman
 thunderbird
 tidy
 tinyxml
+tinyxml2
 tk
 tmux
 totem
@@ -1593,6 +1606,7 @@ unclutter-xfixes-git
 unibilium
 unified-remote-server
 unrar
+unshield
 unzip
 upower
 usbmuxd
@@ -1619,7 +1633,7 @@ vpnc
 vte-common
 vte3
 vulkan-icd-loader
-vundle
+vundle-git
 w3m
 wavpack
 wayland
@@ -1769,6 +1783,7 @@ xorg-xwininfo
 xorg-xwud
 xorgproto
 xpad
+xpadneo-dkms-git
 xsel
 xvidcore
 xz

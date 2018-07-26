@@ -11,6 +11,7 @@ bashrc - bash config
 global-vimrc - The global vim config found at /etc/vimrc
 vimrc - The local vim config found at ~/.vimrc
 Xresources - Rofi and Terminal Themes
+compton.conf - I have made a few small changes to compton to handle stacked/tabbed containers and fix lag in URxvt
 ricepush - The script that grabs all my configs and pushes them to github
 ricepull - A script to pull config files and copy them to the appropriate locations
 ```

@@ -12,6 +12,7 @@ cp ~/.bashrc bashrc
 cp /etc/vimrc global-vimrc
 cp ~/.vimrc vimrc
 cp ~/.Xresources Xresources
+cp ~/.config/compton.conf compton.conf
 cp /usr/bin/ricepush ricepush
 yay -Q | cut -f1 -d " " > programs.txt
 echo "Updating README.md"
