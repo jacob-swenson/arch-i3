@@ -18,6 +18,8 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'christophermca/meta5'
 Plugin 'vim-scripts/guicolorscheme.vim'
+Plugin 'RRethy/vim-illuminate'
+Plugin 'jez/vim-better-sml'
 
 call vundle#end()
 filetype plugin indent on
@@ -39,6 +41,7 @@ nnoremap dL d$
 set mouse=a
 set number
 set relativenumber
+set tabstop=4
 syntax on
 syntax sync minlines=200
 

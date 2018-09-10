@@ -61,8 +61,8 @@ rofi.padding: 440
 
 URxvt.scrollBar: false
 urxvt*depth: 32
-urxvt*background: rgba:0175/0000/0239/c800
-#urxvt*background: rgba:0175/0000/0239/e000
+#urxvt*background: rgba:0175/0000/0239/c800
+urxvt*background: rgba:0175/0000/0239/e000
 URxvt.perl-ext-common: 	default,matcher
 URxvt.url-launcher:	/usr/bin/xdg-open
 URxvt.matcher.button:	1

@@ -75,6 +75,13 @@ modules-left = i3-stickyless xwindow
 tray-position = right
 tray-padding = 2
 
+[bar/nvidia]
+inherit = bar/template
+monitor = ${env:MONITOR:eDP-1-1}
+
+tray-position = right
+tray-padding = 2
+
 ;; MODULES ;;
 [module/xwindow]
 type = internal/xwindow
