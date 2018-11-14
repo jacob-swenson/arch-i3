@@ -1,0 +1,40 @@
+// vim:ts=4:sw=4:et
+{
+    // floating_con with 1 children
+    "border": "pixel",
+    "floating": "auto_off",
+    "layout": "splith",
+    "percent": null,
+    "rect": {
+       "height": 397,
+       "width": 640,
+       "x": 1280,
+       "y": 683
+    },
+    "type": "floating_con",
+    "nodes": [
+        {
+            "border": "none",
+            "current_border_width": 2,
+            "floating": "user_on",
+            "geometry": {
+               "height": 397,
+               "width": 640,
+               "x": 0,
+               "y": 0
+            },
+            "name": "GNOME Twitch",
+            "percent": 1,
+            "swallows": [
+               {
+                "class": "^Gnome\\-twitch$"
+               // "instance": "^gnome\\-twitch$",
+               // "title": "^GNOME\\ Twitch$",
+               // "transient_for": "^$"
+               }
+            ],
+            "type": "con"
+        }
+    ]
+}
+
