@@ -20,6 +20,10 @@ Plugin 'christophermca/meta5'
 Plugin 'vim-scripts/guicolorscheme.vim'
 Plugin 'RRethy/vim-illuminate'
 Plugin 'jez/vim-better-sml'
+Plugin 'morhetz/gruvbox'
+Plugin 'dracula/vim'
+Plugin 'benmills/vimux'
+Plugin 'sonph/onehalf', {'rtp': 'vim/'}
 
 call vundle#end()
 filetype plugin indent on
@@ -32,24 +36,30 @@ nnoremap <silent> <C-k> <c-w>k
 nnoremap <silent> <C-j> <c-w>j
 nnoremap <silent> <C-p> :CtrlP
 nnoremap <silent> <C-t>	:tab split <Return>
+nnoremap <C-x> :TerminalSplit bash
 nnoremap H ^
 nnoremap L $
 nnoremap dH d^
 nnoremap dL d$
+cnoremap w!! execute 'silent! write !sudo tee % >/dev/null' <bar> edit!
 
 " Settings
 set mouse=a
 set number
 set relativenumber
 set tabstop=4
+set cursorline
+set t_Co=256
 syntax on
 syntax sync minlines=200
 
 " Theme settings
 colorscheme meta5
+"colorscheme gruvbox
+"colorscheme dracula
+"colorscheme onehalfdark
 "set background=dark
-let g:airline_theme='meta5'
-set t_Co=256
+"let g:airline_theme='meta5'
 
 
 " If you prefer the old-style vim functionalty, add 'runtime! vimrc_example.vim'
