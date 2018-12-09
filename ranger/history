@@ -1,0 +1,50 @@
+search med
+search .config
+search .conf
+search libr
+rename scph-5501.bin
+rename scph5501.bin
+rename scph5500.bin
+rename scph5502.bin
+search space
+mkdir space-invaders
+search ima
+mkdir import
+search Downl
+search Ready
+mkdir Backup_08-15-2018
+libreoffice
+run
+open_with libreoffice
+open_with 1
+cd .local
+search lutr
+open_with urxvt
+open_with terminal
+search .local
+search wind
+search tt
+search ark
+search dark
+search Bett
+search bett
+shell 
+search rep
+
+search pyso
+search pico
+search lt
+search layers
+open_with 
+open_with vim
+search stuff
+open_with firefox
+search better
+search invite
+search jswe
+search Des
+delete
+search CS4450
+search ubun
+search ar
+search arch
